@@ -12,6 +12,7 @@ A simple Todo application built with React Native and Expo for managing daily ta
 ## Project Description
 
 A Todo application that allows users to:
+
 - Create, edit, and delete tasks
 - Set task priorities (Low, Medium, High)
 - Set date and time deadlines
@@ -21,18 +22,22 @@ A Todo application that allows users to:
 ## Dependencies & Usage
 
 ### Navigation
+
 - **@react-navigation/native** & **@react-navigation/native-stack**: For navigation between screens (TodoList and TaskForm)
 - **react-native-safe-area-context**: Handles safe area for various devices
 - **react-native-screens**: Performance optimization for screen navigation
 
 ### Form Handling & Validation
+
 - **formik**: Manages form state and submit handling
 - **yup**: Validation schema for form input
 
 ### Storage
+
 - **@react-native-async-storage/async-storage**: Stores task data locally on device
 
 ### UI Components
+
 - **@expo/vector-icons**: Icon library (Ionicons)
 - **@react-native-community/datetimepicker**: Date and time picker for selecting deadlines
 - **expo-status-bar**: Custom status bar styling
@@ -70,3 +75,14 @@ npm run web
 
 </div>
 
+## Preview iOs
+
+<div align="center">
+
+<img src="./assets/sample-8.png" alt="Sample 1" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-9.png" alt="Sample 2" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-10.png" alt="Sample 3" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-11.png" alt="Sample 4" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-12.png" alt="Sample 5" width="200" />
+
+</div>
