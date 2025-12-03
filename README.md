@@ -56,3 +56,17 @@ npm run ios
 npm run web
 ```
 
+## Preview Android
+
+<div align="center">
+
+<img src="./assets/sample-1.png" alt="Sample 1" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-2.png" alt="Sample 2" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-3.png" alt="Sample 3" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-4.png" alt="Sample 4" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-5.png" alt="Sample 5" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-6.png" alt="Sample 6" width="200" style="margin-right: 10px;" />
+<img src="./assets/sample-7.png" alt="Sample 7" width="200" />
+
+</div>
+
