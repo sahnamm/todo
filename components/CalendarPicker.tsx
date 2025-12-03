@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -27,6 +27,8 @@ function CalendarPicker({
   selectedDate,
   minimumDate,
 }: CalendarPickerProps) {
+  // State is automatically reset when key prop changes (handled by parent)
+  // No need for useEffect or manual reset logic - the key prop ensures fresh state
   const [tempDate, setTempDate] = useState<Date>(selectedDate || new Date());
 
   const handleChange = (event: DateTimePickerEvent, date?: Date) => {
@@ -48,13 +50,6 @@ function CalendarPicker({
     onSelect(tempDate);
     onClose();
   };
-
-  // Reset temp date when modal opens
-  useEffect(() => {
-    if (visible) {
-      setTempDate(selectedDate || new Date());
-    }
-  }, [visible, selectedDate]);
 
   // Android: render picker directly (it shows as a dialog)
   if (Platform.OS === "android") {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -32,6 +32,8 @@ function TimePicker({
     return now;
   };
 
+  // State is automatically reset when key prop changes (handled by parent)
+  // No need for useEffect or manual reset logic - the key prop ensures fresh state
   const [tempTime, setTempTime] = useState<Date>(getInitialTime());
 
   const handleChange = (event: DateTimePickerEvent, date?: Date) => {
@@ -53,13 +55,6 @@ function TimePicker({
     onSelect(tempTime);
     onClose();
   };
-
-  // Reset temp time when modal opens
-  useEffect(() => {
-    if (visible) {
-      setTempTime(getInitialTime());
-    }
-  }, [visible, selectedTime]);
 
   // Android: render picker directly (it shows as a dialog)
   if (Platform.OS === "android") {

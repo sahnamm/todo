@@ -111,6 +111,7 @@ function DateTimeInputs({
 
       {/* Calendar Picker Modal */}
       <CalendarPicker
+        key={`calendar-${showDatePicker}-${selectedDate?.getTime() || 'null'}`}
         visible={showDatePicker}
         onClose={() => setShowDatePicker(false)}
         onSelect={handleDateSelect}
@@ -119,6 +120,7 @@ function DateTimeInputs({
 
       {/* Time Picker Modal */}
       <TimePicker
+        key={`time-${showTimePicker}-${selectedTime?.getTime() || 'null'}`}
         visible={showTimePicker}
         onClose={() => setShowTimePicker(false)}
         onSelect={handleTimeSelect}
